@@ -67,6 +67,25 @@
 <footer>
   <p>© 2025 Aurex. All rights reserved.</p>
 </footer>
+<section class="order-form" id="order">
+  <h2>Place Your Order</h2>
+  <p>Cash on Delivery Available</p>
 
+  <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+    
+    <!-- Hidden settings -->
+    <input type="hidden" name="_subject" value="New Order from Aurex">
+    <input type="hidden" name="_captcha" value="false">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <textarea name="address" placeholder="Full Delivery Address" required></textarea>
+    <input type="text" name="product" placeholder="Product Name" required>
+    <input type="number" name="quantity" placeholder="Quantity" required>
+
+    <button type="submit">Place Order</button>
+  </form>
+</section>
 </body>
 </html>
+
