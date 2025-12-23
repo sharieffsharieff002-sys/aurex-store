@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aurex – Premium Products</title>
+  <title>Aurex Store</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,76 +10,31 @@
 <header>
   <div class="logo">AUREX</div>
   <nav>
-    <a href="#">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart 🛒</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>AUREX Premium Store</h1>
-  <p>Quality Products • Best Prices • Cash on Delivery</p>
-  <a href="#products"><button>Shop Now</button></a>
-</section>
-
-<section class="products" id="products">
-  <h2>Trending Products</h2>
+<section class="products">
+  <h2>Products</h2>
 
   <div class="product-grid">
 
     <div class="product-card">
-      <img src="https://via.placeholder.com/300" alt="Product">
       <h3>Wireless Earbuds</h3>
-      <p class="price">₹999</p>
+      <p>₹999</p>
+      <button onclick="addToCart('Wireless Earbuds', 999)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://via.placeholder.com/300" alt="Product">
       <h3>Smart Watch</h3>
-      <p class="price">₹1,499</p>
-     
-    </div>
-
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300" alt="Product">
-      <h3>Phone Stand</h3>
-      <p class="price">₹399</p>
-  
+      <p>₹1499</p>
+      <button onclick="addToCart('Smart Watch', 1499)">Add to Cart</button>
     </div>
 
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <h2>Contact Aurex</h2>
-  <p>📦 Fast Shipping | 💰 Cash on Delivery</p>
-
-</section>
-
-<footer>
-  <p>© 2025 Aurex. All rights reserved.</p>
-</footer>
-<section class="order-form" id="order">
-  <h2>Place Your Order</h2>
-  <p>Cash on Delivery Available</p>
-
-  <form action="https://formsubmit.co/aurexstore.co@gmail.com" method="POST">
-    
-    <!-- Hidden settings -->
-    <input type="hidden" name="_subject" value="New Order from Aurex">
-    <input type="hidden" name="_captcha" value="false">
-
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="tel" name="phone" placeholder="Phone Number" required>
-    <textarea name="address" placeholder="Full Delivery Address" required></textarea>
-    <input type="text" name="product" placeholder="Product Name" required>
-    <input type="number" name="quantity" placeholder="Quantity" required>
-
-    <button type="submit">Place Order</button>
-  </form>
-</section>
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
