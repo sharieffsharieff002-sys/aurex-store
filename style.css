@@ -1,162 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
-  background: #f4f4f4;
-  color: #222;
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
 }
 
 header {
-  background: #000;
-  color: #fff;
-  padding: 15px 30px;
+  background: black;
+  color: white;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-nav a {
+a {
   color: white;
-  margin-left: 20px;
+  margin-left: 15px;
   text-decoration: none;
 }
 
-.hero {
-  background: linear-gradient(to right, #000, #333);
-  color: white;
-  text-align: center;
-  padding: 90px 20px;
-}
-
-.hero h1 {
-  font-size: 40px;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-.hero button {
-  margin-top: 25px;
-  padding: 14px 30px;
-  background: gold;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.products {
-  padding: 50px 30px;
-  text-align: center;
-}
-
-.products h2 {
-  font-size: 28px;
+.products, .cart {
+  padding: 30px;
 }
 
 .product-grid {
-  margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .product-card {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
 }
 
-.product-card img {
+button {
+  padding: 10px;
   width: 100%;
-  border-radius: 8px;
-}
-
-.product-card h3 {
-  margin: 12px 0 5px;
-}
-
-.price {
-  font-weight: bold;
-  color: #000;
-}
-
-.product-card button {
-  margin-top: 10px;
-  width: 100%;
-  padding: 12px;
   background: black;
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 15px;
 }
 
-.contact {
-  background: #fff;
-  padding: 40px;
-  text-align: center;
-}
-
-footer {
-  background: #000;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-.order-form {
-  background: #ffffff;
-  padding: 50px 20px;
-  margin: 40px auto;
-  max-width: 500px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.order-form h2 {
-  margin-bottom: 10px;
-}
-
-.order-form p {
-  margin-bottom: 20px;
-  color: #555;
-}
-
-.order-form input,
-.order-form textarea {
+input, textarea {
   width: 100%;
-  padding: 12px;
   margin: 10px 0;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.order-form textarea {
-  resize: none;
-  height: 80px;
-}
-
-.order-form button {
-  background: black;
-  color: white;
-  padding: 14px;
-  width: 100%;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 6px;
+  padding: 10px;
 }
